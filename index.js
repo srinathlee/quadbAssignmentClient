@@ -13,8 +13,8 @@ let final_value=60;
 
 let progress_id=setInterval(() => {
     progressbar.style.background=`conic-gradient(
-        #3DC6C1 ${initial_value *3.6}deg,
-        white ${initial_value *3.6}deg
+        #3DC6C1 ${initial_value *6}deg,
+        white ${initial_value *6}deg
     )`;
     if(initial_value==final_value){
         initial_value=0;
@@ -104,7 +104,7 @@ function createStatusBars(obj) {
 fetch("https://quadbserver.onrender.com/api/getData")
 .then((response)=>{return response.json()})
 .then((data)=>{
-    for (let i of data.data){
+    for (let i of data.data){ 
 
         createStatusBars(i)
     }
