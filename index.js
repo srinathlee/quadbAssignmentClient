@@ -101,7 +101,7 @@ function createStatusBars(obj) {
 
 // fetching________________________________________________
 
-fetch("http://localhost:5080/api/GetData")
+fetch("https://quadbserver.onrender.com/api/getData")
 .then((response)=>{return response.json()})
 .then((data)=>{
     for (let i of data.data){
