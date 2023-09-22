@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quadb</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="hero-container">
+        <div class="header-section">
+
+            <h1 class="logo">HODLINFO</h1>
+            <div class="coins-container">
+                <select class="head-select">
+                    <option>INR</option>
+                </select>
+                <select class="head-select">
+                    <option>ETH</option>
+                    <option>BTC</option>
+                    <option>BNC</option>
+                </select>
+                <p class="conins-buy-heading">BUY BTC</p>
+            </div>
+
+            <div class="action-head-container">
+                 <div class="progress_bar">
+                   <p class="progress_value">0</p>
+                 </div>
+                <button class="telegram-btn">
+                    <img class="telegram_logo" src="../client/assets/teltgramlogo.png"/>
+                    Connect Telegram
+                </button>
+
+                <!--quadb toggle  -->
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+
+            </div>
+        </div>
+
+        <div class="second-section">
+
+            <div class="cal-div">
+                <h1 class="coin-per">0.92 %</h1>
+                <p class="coin-time">5min</p>
+            </div>
+
+            <div class="cal-div">
+                <h1 class="coin-per">1.62 %</h1>
+                <p class="coin-time">5min</p>
+            </div>
+
+            <div class="cal-div">
+                <p class="best-price-para">Best Price to Trade</p>
+                <h1 class="best-price">₹ 24,12,951</h1>
+                <p class="avg-price-para">Average BTC/INR net price including commission</p>
+            </div>
+
+            <div class="cal-div">
+                <h1 class="coin-per">9.1 %</h1>
+                <p class="coin-time">5min</p>
+            </div>
+
+            <div class="cal-div">
+                <h1 class="coin-per">11.29 %</h1>
+                <p class="coin-time">5min</p>
+            </div>
+        </div>
+
+       <div class="table-container">
+        <table class="status-board-section">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Platform</th>
+                    <th>Last Traded Price</th>
+                    <th>Buy / Sell Price</th>
+                    <th>Volume</th>
+                    <th>Base_Unit</th>
+               </tr>
+            </thead>
+            <tbody  id="status-board-section">
+   
+           </tbody>
+
+        </table>
+       </div>
+
+ 
+
+        <div class="add-button-bg-container"><button class="add-home-screen-btn">Add hodlinfo to home screen</button></div>
+
+    </div>
+    <div class="footer-section">
+         <p class="footer-copyright">Copyright © 2019
+            HodlInfo.com</p>
+            <p class="footer-support">Support</p>  
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html> 

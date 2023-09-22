@@ -1,0 +1,395 @@
+* {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    background-color: #191D28;
+   
+}
+body::-webkit-scrollbar {
+display: none;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.logo {
+    font-size: 40px;
+    color: #3DC6C1;
+    font-family: sans-serif;
+}
+
+.conins-buy-heading {
+    font-size: 13px;
+    background-color: #2E3241;
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+}
+
+.coins-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.head-select {
+    border: none;
+    background-color: #2E3241;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+}
+.status-board-section{
+    
+   
+}
+.table-container{
+ /* width:100%; */
+ overflow:scroll; 
+}
+.table-container::-webkit-scrollbar {
+    display: none;
+}
+.telegram-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #3DC6C1;
+    color: white;
+    padding: 8px
+}
+
+.timer-button {
+    padding: 6px;
+    border-radius: 16px;
+    border: 3px solid #3DC6C1;
+}
+
+/* quadb toggle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.add-button-bg-container {
+   
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: #191D28;
+    padding:10px
+}
+
+.add-home-screen-btn {
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #3DC6C1;
+    color: #3DC6C1;
+    background-color: transparent;
+    padding: 10px
+}
+.progress_value{
+    color:#3DC6C1;
+}
+.add-home-screen-btn:hover {
+    cursor: pointer;
+}
+
+/* ___________________________________________ */
+
+
+.action-head-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.second-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.coin-per {
+    color: #3DC6C1;
+    font-size: 40px;
+}
+
+.coin-time {
+    font-size: 20px;
+    color: gray;
+}
+
+.cal-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10PX;
+}
+
+.best-price-para {
+    font-size: 25px;
+    color: gray;
+   
+}
+
+.best-price {
+    font-size: 50px;
+    color: white;
+    margin: 20px 0px;
+}
+
+.avg-price-para {
+    font-size: 14px;
+    color: gray;
+}
+
+.second-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.status-header {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: 12px;
+}
+
+table{
+    width:100%;
+    text-align: center;
+    border-collapse:separate;
+    border-spacing:0 15px;
+}
+
+thead tr th{
+    color:#7c7e84;
+    font-size: 24px;
+}
+tbody tr{
+    border-radius: 20px;
+}
+.coin-bar-item td{
+    padding:10px;
+}
+.coin-bar-item td:last-child{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.coin-bar-item td:first-child{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.coin-bar-item{
+    background-color: #2e3241;
+    margin-bottom: 10px;
+  }
+  .coin-bar-item td{
+   margin-bottom: 10px;
+  }
+  .item_element{
+    color:white;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .footer-section{
+    display: flex;
+    justify-content:space-between;
+    padding:15px;
+    width:100%;
+    border-top: 1px #2e3241 solid;
+    margin-bottom: 50px;
+  }
+  .footer-section p{
+    color:#7c7e84;
+  }
+
+  .telegram_logo{
+    width:20px;
+    height:15px;
+    padding-top: 2px;
+  }
+/* _____________curcular porgress bar_________________________________ */
+
+
+.progress_bar{
+    position: relative;
+    background-color: #3DC6C1;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.progress_bar::before{
+    position:absolute;
+    content:"";
+    height:35px;
+    width:35px;
+    border-radius: 50%;
+    background-color: #191D28;
+}
+.progress_value{
+    position: relative;
+}
+
+
+  @media(max-width:900px){
+   .coin-per{
+    font-size: 30PX;
+   }
+ 
+  }
+
+  @media(max-width:700px){
+    .coin-per{
+     font-size: 30PX;
+    }
+    .header-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo{
+        margin-bottom: 10px;
+    }
+    .coins-container{
+        margin-bottom: 20px;
+    }
+  
+   }
+   @media(max-width:700px){
+      .best-price{
+        font-size:40px;
+      }
+      table thead tr th{
+        font-size: 20px;
+        padding: 10px;
+ 
+      }
+   }
+   @media(max-width:630px){
+    .best-price-para{
+       font-size: 15px; 
+    }
+    .best-price{
+        font-size: 30px;
+
+    }
+    .avg-price-para{
+        font-size:12px;
+        text-align: center;
+    }
+    .coin-per{
+        font-size: 25px;
+    }
+
+ }
+ @media(max-width:500px){
+    .coin-per{
+        font-size: 16px;
+    }
+    .coin-time{
+        font-size: 10px;
+    }
+    table thead tr th{
+        font-size: 15px;
+        padding: 10px;
+ 
+      }
+      .best-price{
+        font-size: 25px;
+      }
+      .avg-price-para{
+        font-size: 10px;
+      }
+      .best-price-para {
+        font-size: 10px;
+        text-align: center;
+      }
+ }
